@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    1 当一个百分百的页面在移动设备浏览的时候,网页的宽度没有和设备的宽度一致
+    2 移动设备的网页是基于???来计算的宽度的
+    3 原因是在移动设备当中,浏览器和网页之间 还有一层虚拟的容器 这个容器叫viewport
+    4 viewport::只在移动设备才有,用虚拟容器承载网页,而且主流设备当中的viewport宽度默认是980px,可以缩放,可以设置尺寸,可以设置是否允许缩放
+
+    使用viewport和流式布局达到移动端的适配
+    ====标准化适配要求:====
+    1.网页的宽度和浏览器一致
+    2.保证网页内容的缩放比和PC端保持一致 视口的缩放比是1.0
+    3.不允许用户自行缩放 视口不能缩放
+
+    去完成这个标准设置
+    1.如何设置viewport
+    <!-- <meta name="viewport"> -->
+
+    2.具体的功能怎么设置
+
+    width 设置视口的宽度(单位px, 特殊值device-width 代表当前设备的宽度)
+
+    initial-scale 设置时候的默认比例
+
+    user-scalable 设置视口是否允许自行缩放 1(yes) 0(no)
+
+    minimum-scale 最小运行缩放比
+
+    maximum-scale 最大运行缩放比
+
+
+</body>
+
+</html>
