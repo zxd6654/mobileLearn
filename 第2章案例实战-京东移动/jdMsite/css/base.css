@@ -1,0 +1,17 @@
+/* reset css 重置样式 */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    /* 针对移动端 */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* 点击高亮效果清除*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ...... */
+
+/* common css 公用样式 */
